@@ -2,25 +2,27 @@
 <html lang="es">
 <head>
 	<meta charset="utf8">
-	<title>Mi primera página</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script|Pacifico" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<title>Contactar</title>
 
 </head>
 <body>
 	<header>
 		<img src="logotipo.jpg" title="logo">
-		<h1>El Baul del Abuelo Antiguedades</h1>
+		<h1 align= "center">El Baul del Abuelo Antiguedades</h1>
 	</header>
 	<nav>
 		<ul>
-			<li><a href="#">Inicio</a></li>
-			<li><a href="productos.html#">Productos</a></li>
+			<li><a href="index.html#">Inicio</a></li>
+			<li><a href="product.html#">Productos</a></li>
 			<li><a href="sucursales.html#">Sucursales</a></li>
 			<li><a href="quienessomos.html#">¿Quiene Somos?></li>
 			<li><a href="contactar.html#">Contactar</a>
-			<ul>
-				<li>Facebook</li>
-				<li>Twitter</li>
-			</ul>
+			
 			</li>
 		</ul>
 	</nav>
@@ -32,12 +34,32 @@
 			<tr><td>Celular</td><td>(712 100 2023</td></tr>
 			<tr><td>Correo</td><td>josejuancoronajuarez@gmail.com</td></tr>
 		</table>
-		
+		<section>
+				<fieldset>
+					<legend>Contacto</legend>
+					<form method ="post" action="gardar.php ">
+						<label>Nombre: &nbsp </label>
+						<input type="text" name="nombre" required placeholder="nombre completo">
+						<br>
+						<br>
+						<label>Correo: &nbsp </label>
+						<input type="email" name="nombre" required placeholder="tucorreo@server.com">
+						<br>
+						<br>
+						<label>Comentarios: &nbsp </label>
+						<textarea></textarea>
+						<br>
+						<br>
+						<input id="enviar" type="submit" value="enviar">
+						<input id="cancelar" type="reset" value="cancelar">
+					</form>
+
+				</fieldset>
+
+			</section>	
 	</div>
 
 	
-	
-</div>
 	<footer>
 		<p>Vistanos en Temascalcingo, te esperamos.</p>
 	</footer>
